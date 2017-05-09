@@ -1,2 +1,7 @@
+let thread_1 =
+  Lwt.return "hello world"
+
 let _ =
-  print_endline "hello";;
+  Lwt.(
+    thread_1
+    >>= (fun s -> print_endline s; return s))
