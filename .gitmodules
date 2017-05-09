@@ -1,0 +1,6 @@
+[submodule "lwt"]
+	path = lwt
+	url = https://github.com/ocsigen/lwt
+[submodule "result"]
+	path = result
+	url = https://github.com/janestreet/result.git

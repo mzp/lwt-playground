@@ -4,7 +4,7 @@ WORKDIR /home/opam
 
 RUN git clone https://github.com/ocaml/opam-repository.git && \
       opam update && \
-      opam install -y merlin ocp-indent utop lwt && \
+      opam install -y merlin ocp-indent utop && \
       rm -rf /home/opam/opam-repository
 
 WORKDIR /work
